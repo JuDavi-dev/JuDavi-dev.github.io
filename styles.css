@@ -194,7 +194,7 @@ section { padding: 88px 0; }
 .header-cta { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* ═══════════════════════════════════════════════════════
-   NAVBAR  — fixed/corrected
+   NAVBAR
 ═══════════════════════════════════════════════════════ */
 .navbar {
     position: sticky;
@@ -207,7 +207,6 @@ section { padding: 88px 0; }
     transition: background var(--transition), border-color var(--transition), padding var(--transition);
 }
 
-/* ↓ scrolled: BIGGER, solid background, visible border */
 .navbar.scrolled {
     background: var(--bg-nav);
     border-bottom-color: var(--border);
@@ -222,7 +221,6 @@ section { padding: 88px 0; }
     gap: 24px;
 }
 
-/* Brand */
 .brand {
     display: flex;
     flex-direction: column;
@@ -243,7 +241,6 @@ section { padding: 88px 0; }
     margin-top: 1px;
 }
 
-/* Nav links */
 .navbar-nav {
     display: flex;
     align-items: center;
@@ -268,7 +265,6 @@ section { padding: 88px 0; }
     text-shadow: 0 0 8px var(--purple-glow);
 }
 
-/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -326,114 +322,76 @@ section { padding: 88px 0; }
 .expertise-item p  { font-size: 0.85rem; line-height: 1.55; }
 
 /* ═══════════════════════════════════════════════════════
-   CV SECTION
+   RESUME SECTION
 ═══════════════════════════════════════════════════════ */
-.cv-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    align-items: start;
+.resume-section { padding-top: 80px; }
+
+/* Instead of auto-fit grid, stack them vertically as requested */
+.resume-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 860px;
+    margin: 0 auto;
 }
 
-.cv-col { display: flex; flex-direction: column; gap: 20px; }
-
-.cv-block {
+.resume-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 26px 28px;
-    transition: border-color var(--transition);
+    padding: 34px 38px;
+    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
-.cv-block:hover { border-color: rgba(157,0,255,0.35); }
 
-.cv-block-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--white);
+.resume-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(157, 0, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
-.cv-block-title i { color: var(--purple); font-size: 0.95rem; }
 
-.cv-block > p { font-size: 0.88rem; line-height: 1.7; }
-
-.cv-entry {
-    padding-bottom: 18px;
-    margin-bottom: 18px;
+.resume-item {
+    padding-bottom: 22px;
+    margin-bottom: 22px;
     border-bottom: 1px solid var(--border);
 }
-.cv-entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.resume-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
-.cv-entry-header {
+.resume-date {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--purple);
+    background: var(--purple-soft);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 8px;
+}
+
+.resume-item h5 {
+    font-size: 1.1rem;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+.resume-item p { font-size: 0.9rem; line-height: 1.6; }
+
+/* Skills inside Resume */
+.skill-item { margin-bottom: 18px; }
+.skill-item:last-child { margin-bottom: 0; }
+
+.skill-label {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 4px;
-    flex-wrap: wrap;
-}
-.cv-entry-title { font-size: 0.95rem; font-weight: 700; color: var(--white); }
-.cv-badge {
-    font-family: var(--mono);
-    font-size: 0.68rem;
-    background: var(--purple-soft);
-    color: var(--purple);
-    border: 1px solid rgba(157,0,255,0.3);
-    border-radius: var(--radius-sm);
-    padding: 2px 9px;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-.cv-entry-sub  { font-family: var(--mono); font-size: 0.72rem; color: var(--cyan); margin-bottom: 6px; }
-.cv-entry-desc { font-size: 0.85rem; line-height: 1.6; }
-
-/* Skills chips */
-.cv-skills-grid { display: flex; flex-wrap: wrap; gap: 8px; }
-.cv-skill-chip {
-    display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--white);
+}
+.skill-pct {
     font-family: var(--mono);
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     color: var(--silver);
-    background: rgba(255,255,255,0.03);
-    transition: border-color var(--transition), color var(--transition);
 }
-.cv-skill-chip:hover { border-color: var(--purple); color: var(--purple); }
-.cv-skill-chip i { color: var(--purple); }
-
-/* Language bars */
-.cv-lang-item { margin-bottom: 14px; }
-.cv-lang-item:last-child { margin-bottom: 0; }
-.cv-lang-label { display: flex; justify-content: space-between; margin-bottom: 7px; font-size: 0.88rem; font-weight: 600; color: var(--white); }
-.cv-lang-level { font-family: var(--mono); font-size: 0.72rem; color: var(--silver); }
-
-/* Interest tags */
-.cv-interest-list { display: flex; flex-wrap: wrap; gap: 8px; }
-.cv-interest-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    font-size: 0.78rem;
-    color: var(--silver);
-    background: rgba(255,255,255,0.02);
-    transition: border-color var(--transition), color var(--transition);
-}
-.cv-interest-tag i { color: var(--cyan); }
-.cv-interest-tag:hover { border-color: var(--cyan); color: var(--white); }
-
-/* Links list */
-.cv-links-list { display: flex; flex-direction: column; gap: 12px; }
-.cv-links-list li { display: flex; align-items: center; gap: 12px; font-size: 0.88rem; }
-.cv-links-list i { color: var(--purple); width: 18px; text-align: center; font-size: 1rem; flex-shrink: 0; }
 
 /* ═══════════════════════════════════════════════════════
    COURSES
@@ -636,10 +594,6 @@ section { padding: 88px 0; }
 /* ═══════════════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════════════ */
-@media (max-width: 1060px) {
-    .cv-grid { grid-template-columns: 1fr; }
-}
-
 @media (max-width: 860px) {
     .stats-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -664,6 +618,8 @@ section { padding: 88px 0; }
     .courses-grid { grid-template-columns: 1fr; }
     .network-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
     .project-img { height: 175px; }
+    
+    .resume-card { padding: 24px 20px; }
 }
 
 @media (max-width: 480px) {
@@ -673,5 +629,4 @@ section { padding: 88px 0; }
     .network-grid--professors { grid-template-columns: 1fr; }
     .network-card--professor { flex-direction: column; text-align: center; }
     .network-card--professor .net-role { text-align: center; }
-    .cv-entry-header { flex-direction: column; gap: 4px; }
 }
