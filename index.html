@@ -11,6 +11,7 @@
 </head>
 <body id="home">
 
+    <!-- ===================== HEADER ===================== -->
     <header class="header">
         <div class="header-bg-glow"></div>
         <div class="container header-inner">
@@ -31,6 +32,7 @@
         </div>
     </header>
 
+    <!-- ===================== NAVBAR ===================== -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <div class="brand">
@@ -40,7 +42,8 @@
             <ul class="navbar-nav" id="navMenu">
                 <li><a href="#home"     class="nav-link">Home</a></li>
                 <li><a href="#about"    class="nav-link">About</a></li>
-                <li><a href="#resume"   class="nav-link">Resume</a></li>
+                <li><a href="#cv"       class="nav-link">CV</a></li>
+                <li><a href="#courses"  class="nav-link">Courses</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#network"  class="nav-link">Network</a></li>
                 <li><a href="#contact"  class="nav-link">Contact</a></li>
@@ -51,8 +54,10 @@
         </div>
     </nav>
 
+    <!-- ===================== MAIN ===================== -->
     <main class="container main-content">
 
+        <!-- ====== ABOUT ====== -->
         <section id="about" class="about-section">
             <div class="about-grid">
 
@@ -119,83 +124,224 @@
             </div>
         </section>
 
-        <section id="resume" class="resume-section">
-            <h2 class="section-header">My <span class="text-accent">Resume</span></h2>
-            <div class="resume-grid">
+        <!-- ====== CV / CURRICULUM VITAE ====== -->
+        <section id="cv" class="cv-section">
+            <h2 class="section-header">Curriculum <span class="text-accent">Vitae</span></h2>
 
-                <div class="resume-card">
-                    <h4 class="card-heading">Experience</h4>
-                    <div class="line"></div>
-                    <div class="resume-item">
-                        <span class="resume-date">2026 – Present</span>
-                        <h5>Personal Projects &amp; Self-Learning</h5>
-                        <p>Developing games and logic puzzles in Python (BuscaMina, Sudoku). Studying web development and deep learning fundamentals through online resources and university coursework at <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a>.</p>
+            <div class="cv-grid">
+
+                <!-- Left column -->
+                <div class="cv-col">
+
+                    <div class="cv-block">
+                        <h4 class="cv-block-title"><i class="fa-solid fa-user"></i> Profile</h4>
+                        <div class="line"></div>
+                        <p>First-semester Computer Science student at <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">Universidad Católica San Pablo (UCSP)</a>, based in Arequipa, Perú. Passionate about software development, deep learning and web technologies. I have a strong interest in music, technology and politics, and I approach every project with curiosity and a self-driven mindset.</p>
                     </div>
-                    <div class="resume-item">
-                        <span class="resume-date">2026</span>
-                        <h5>UCSP Student Community</h5>
-                        <p>Active participant in the Computer Science student community at <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a>, collaborating with peers on programming challenges and university projects.</p>
+
+                    <div class="cv-block">
+                        <h4 class="cv-block-title"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+                        <div class="line"></div>
+                        <div class="cv-entry">
+                            <div class="cv-entry-header">
+                                <span class="cv-entry-title"><a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">Universidad Católica San Pablo</a></span>
+                                <span class="cv-badge">2025 – Present</span>
+                            </div>
+                            <p class="cv-entry-sub">B.S. Computer Science · 1st Semester · Arequipa, Perú</p>
+                            <p class="cv-entry-desc">Core curriculum covers programming foundations, mathematical logic, communication and university life skills.</p>
+                        </div>
+                        <div class="cv-entry">
+                            <div class="cv-entry-header">
+                                <span class="cv-entry-title">High School</span>
+                                <span class="cv-badge">Graduated 2024</span>
+                            </div>
+                            <p class="cv-entry-sub">Arequipa, Perú</p>
+                            <p class="cv-entry-desc">Developed strong foundations in mathematics, sciences and humanities. Discovered a passion for technology and programming.</p>
+                        </div>
+                    </div>
+
+                    <div class="cv-block">
+                        <h4 class="cv-block-title"><i class="fa-solid fa-laptop-code"></i> Projects</h4>
+                        <div class="line"></div>
+                        <div class="cv-entry">
+                            <div class="cv-entry-header">
+                                <span class="cv-entry-title">Minesweeper</span>
+                                <span class="cv-badge">Python</span>
+                            </div>
+                            <p class="cv-entry-desc">Classic Minesweeper game with recursive flood-fill, mine placement algorithm and win/loss detection logic.</p>
+                        </div>
+                        <div class="cv-entry">
+                            <div class="cv-entry-header">
+                                <span class="cv-entry-title">Sudoku</span>
+                                <span class="cv-badge">Python</span>
+                            </div>
+                            <p class="cv-entry-desc">Fully playable Sudoku with backtracking solver for puzzle generation, input validation and difficulty levels.</p>
+                        </div>
+                        <div class="cv-entry" style="border-bottom:none;margin-bottom:0;padding-bottom:0">
+                            <div class="cv-entry-header">
+                                <span class="cv-entry-title">Personal Portfolio Website</span>
+                                <span class="cv-badge">HTML · CSS · JS</span>
+                            </div>
+                            <p class="cv-entry-desc">Dark-mode personal brand portfolio with neon aesthetic, responsive layout and smooth animations.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right column -->
+                <div class="cv-col">
+
+                    <div class="cv-block">
+                        <h4 class="cv-block-title"><i class="fa-solid fa-wrench"></i> Technical Skills</h4>
+                        <div class="line"></div>
+                        <div class="cv-skills-grid">
+                            <div class="cv-skill-chip"><i class="fa-brands fa-python"></i> Python</div>
+                            <div class="cv-skill-chip"><i class="fa-solid fa-c"></i> C++</div>
+                            <div class="cv-skill-chip"><i class="fa-brands fa-html5"></i> HTML5</div>
+                            <div class="cv-skill-chip"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                            <div class="cv-skill-chip"><i class="fa-brands fa-js"></i> JavaScript</div>
+                            <div class="cv-skill-chip"><i class="fa-brands fa-git-alt"></i> Git</div>
+                            <div class="cv-skill-chip"><i class="fa-solid fa-brain"></i> Deep Learning</div>
+                            <div class="cv-skill-chip"><i class="fa-solid fa-terminal"></i> Linux CLI</div>
+                        </div>
+                    </div>
+
+                    <div class="cv-block">
+                        <h4 class="cv-block-title"><i class="fa-solid fa-language"></i> Languages</h4>
+                        <div class="line"></div>
+                        <div class="cv-lang-item">
+                            <div class="cv-lang-label">
+                                <span>Spanish</span><span class="cv-lang-level">Native</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill" style="width:100%"></div></div>
+                        </div>
+                        <div class="cv-lang-item">
+                            <div class="cv-lang-label">
+                                <span>English</span><span class="cv-lang-level">Proficient (B2)</span>
+                            </div>
+                            <div class="progress-track"><div class="progress-fill" style="width:75%"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="cv-block">
+                        <h4 class="cv-block-title"><i class="fa-solid fa-star"></i> Interests</h4>
+                        <div class="line"></div>
+                        <div class="cv-interest-list">
+                            <span class="cv-interest-tag"><i class="fa-solid fa-music"></i> Music Production</span>
+                            <span class="cv-interest-tag"><i class="fa-solid fa-microchip"></i> AI & Deep Learning</span>
+                            <span class="cv-interest-tag"><i class="fa-solid fa-landmark"></i> Politics & Society</span>
+                            <span class="cv-interest-tag"><i class="fa-solid fa-gamepad"></i> Game Development</span>
+                            <span class="cv-interest-tag"><i class="fa-solid fa-chart-bar"></i> Data Analytics</span>
+                            <span class="cv-interest-tag"><i class="fa-solid fa-book"></i> Open Source</span>
+                        </div>
+                    </div>
+
+                    <div class="cv-block">
+                        <h4 class="cv-block-title"><i class="fa-solid fa-link"></i> Links</h4>
+                        <div class="line"></div>
+                        <ul class="cv-links-list">
+                            <li>
+                                <i class="fa-brands fa-github"></i>
+                                <a href="https://github.com/" target="_blank" rel="noopener">github.com/juan-garcia</a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/juan-garcia</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:juan.garcia.humpire@ucsp.edu.pe">juan.garcia.humpire@ucsp.edu.pe</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== COURSES ====== -->
+        <section id="courses" class="courses-section">
+            <h2 class="section-header">My <span class="text-accent">Courses</span></h2>
+            <p class="section-sub">1st semester at <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a> — Computer Science Program</p>
+
+            <div class="courses-grid">
+
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-comments"></i></div>
+                    <div class="course-info">
+                        <h4 class="course-name">Comunicación I</h4>
+                        <p class="course-desc">Academic communication, writing skills and oral argumentation for university-level contexts.</p>
+                        <div class="course-professor">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                            <a href="https://www.linkedin.com/in/angel-rodriguez-cruz-459008183/" target="_blank" rel="noopener">Angel David Rodriguez Cruz</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="resume-card">
-                    <h4 class="card-heading">Education</h4>
-                    <div class="line"></div>
-                    <div class="resume-item">
-                        <span class="resume-date">2026 – Present</span>
-                        <h5><a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">Universidad Católica San Pablo (UCSP)</a></h5>
-                        <p>Computer Science 1st Semester UCSP. Curriculum based on <a href="https://www.acm.org" target="_blank">ACM</a> standards and internationally accredited by <a href="https://www.abet.org" target="_blank">ABET</a>.</p>
-                    </div>
-                    <div class="resume-item">
-                        <span class="resume-date">Before 2026</span>
-                        <h5>High School</h5>
-                        <p>Completed secondary education. Developed a strong interest in mathematics, technology, music and political sciences.</p>
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="course-info">
+                        <h4 class="course-name">Fundamentos de Programación</h4>
+                        <p class="course-desc">Core programming concepts using structured and procedural paradigms. Problem-solving with algorithms.</p>
+                        <div class="course-professor">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                            <a href="https://pe.linkedin.com/in/julissa-villanueva-llerena" target="_blank" rel="noopener">Julissa Villanueva Llerena</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="resume-card">
-                    <h4 class="card-heading">Skills</h4>
-                    <div class="line"></div>
-                    <div class="skill-item">
-                        <div class="skill-label">
-                            <span>Python</span>
-                            <span class="skill-pct">72%</span>
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-square-root-variable"></i></div>
+                    <div class="course-info">
+                        <h4 class="course-name">Fundamentos Matemáticos para Computación</h4>
+                        <p class="course-desc">Discrete mathematics, sets, relations, functions and combinatorics applied to computer science.</p>
+                        <div class="course-professor">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                            <a href="https://pe.linkedin.com/in/luis-fernando-d%C3%ADaz-basurco-48098333" target="_blank" rel="noopener">Luis Fernando Díaz Basurco</a>
                         </div>
-                        <div class="progress-track"><div class="progress-fill" style="width:72%"></div></div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-label">
-                            <span>C++</span>
-                            <span class="skill-pct">60%</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="course-info">
+                        <h4 class="course-name">Introducción a Computación</h4>
+                        <p class="course-desc">Overview of computer science: hardware, software, algorithms, data representation and computing history.</p>
+                        <div class="course-professor">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                            <a href="https://pe.linkedin.com/in/ecuadrosv" target="_blank" rel="noopener">Ernesto Cuadros-Vargas</a>
                         </div>
-                        <div class="progress-track"><div class="progress-fill" style="width:60%"></div></div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-label">
-                            <span>HTML &amp; CSS</span>
-                            <span class="skill-pct">55%</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-university"></i></div>
+                    <div class="course-info">
+                        <h4 class="course-name">Introducción a la Vida Universitaria</h4>
+                        <p class="course-desc">University life skills, academic regulations, study methods and personal development at UCSP.</p>
+                        <div class="course-professor">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                            <a href="https://pe.linkedin.com/in/gabriela-ponce-reinoso-885922127" target="_blank" rel="noopener">Gabriela Ponce Reinoso</a>
                         </div>
-                        <div class="progress-track"><div class="progress-fill" style="width:55%"></div></div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-label">
-                            <span>English</span>
-                            <span class="skill-pct">78%</span>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <div class="course-info">
+                        <h4 class="course-name">Lógica</h4>
+                        <p class="course-desc">Propositional and predicate logic, formal reasoning, proofs and their application in computer science.</p>
+                        <div class="course-professor">
+                            <i class="fa-solid fa-chalkboard-teacher"></i>
+                            <a href="https://www.linkedin.com/in/kristel-gisselle-loayza-cruz-abb3b039b/" target="_blank" rel="noopener">Kristel Gisselle Loayza Cruz</a>
                         </div>
-                        <div class="progress-track"><div class="progress-fill" style="width:78%"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-label">
-                            <span>Deep Learning</span>
-                            <span class="skill-pct">30%</span>
-                        </div>
-                        <div class="progress-track"><div class="progress-fill" style="width:30%"></div></div>
                     </div>
                 </div>
 
             </div>
         </section>
 
+        <!-- ====== STATS ====== -->
         <section class="stats-section" aria-label="Fun stats">
             <div class="stats-grid">
                 <div class="stat-item">
@@ -221,6 +367,7 @@
             </div>
         </section>
 
+        <!-- ====== PROJECTS ====== -->
         <section id="projects" class="projects-section">
             <h2 class="section-header">My <span class="text-accent">Projects</span></h2>
             <div class="projects-grid">
@@ -228,18 +375,17 @@
                 <div class="project-card">
                     <div class="project-img">
                         <img src="https://tse4.mm.bing.net/th/id/OIP.mkUAdQwPRp28nTiFuS7HbAHaEp?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
-                             alt="Buscamina game screenshot"
-                             loading="lazy">
+                             alt="Minesweeper game screenshot" loading="lazy">
                     </div>
                     <div class="project-content">
                         <div class="project-header">
-                            <h4>Buscaminar</h4>
+                            <h4>Minesweeper</h4>
                             <div class="project-links">
-                                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                         <p class="tech-stack">Python</p>
-                        <p>Classic Buscamina built from scratch in Python. Features recursive flood-fill for empty cell revealing, mine placement logic and win/loss detection.</p>
+                        <p>Classic Minesweeper built from scratch in Python. Features recursive flood-fill for empty cell revealing, mine placement logic and win/loss detection.</p>
                         <a href="https://github.com/" target="_blank" rel="noopener" class="read-more">View on GitHub <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -247,14 +393,13 @@
                 <div class="project-card">
                     <div class="project-img">
                         <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/792/105/datas/original.png"
-                             alt="Sudoku game screenshot"
-                             loading="lazy">
+                             alt="Sudoku game screenshot" loading="lazy">
                     </div>
                     <div class="project-content">
                         <div class="project-header">
                             <h4>Sudoku</h4>
                             <div class="project-links">
-                                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                         <p class="tech-stack">Python</p>
@@ -274,7 +419,7 @@
                         <div class="project-header">
                             <h4>Personal Portfolio</h4>
                             <div class="project-links">
-                                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://github.com/" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                         <p class="tech-stack">HTML · CSS · JavaScript</p>
@@ -286,6 +431,7 @@
             </div>
         </section>
 
+        <!-- ====== NETWORK ====== -->
         <section id="network" class="network-section">
             <h2 class="section-header">My <span class="text-accent">Network</span></h2>
             <p class="section-sub">Classmates, professors and people I look up to in the world of tech.</p>
@@ -364,9 +510,9 @@
                 <div class="network-card network-card--professor">
                     <div class="avatar-ring avatar-ring--professor"><i class="fa-solid fa-graduation-cap"></i></div>
                     <div class="network-info">
-                        <h4 class="net-name">Ernesto Cuadros</h4>
-                        <p class="net-role">Professor — ICC · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
-                        <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank" rel="noopener" class="network-link network-link--linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <h4 class="net-name">Ernesto Cuadros-Vargas</h4>
+                        <p class="net-role">Introducción a Computación · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
+                        <a href="https://pe.linkedin.com/in/ecuadrosv" target="_blank" rel="noopener" class="network-link network-link--linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                     </div>
                 </div>
 
@@ -374,8 +520,44 @@
                     <div class="avatar-ring avatar-ring--professor"><i class="fa-solid fa-graduation-cap"></i></div>
                     <div class="network-info">
                         <h4 class="net-name">Kristel Gisselle Loayza Cruz</h4>
-                        <p class="net-role">Professor — Mathematical Logic · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
+                        <p class="net-role">Lógica · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
                         <a href="https://www.linkedin.com/in/kristel-gisselle-loayza-cruz-abb3b039b/" target="_blank" rel="noopener" class="network-link network-link--linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="network-card network-card--professor">
+                    <div class="avatar-ring avatar-ring--professor"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="network-info">
+                        <h4 class="net-name">Julissa Villanueva Llerena</h4>
+                        <p class="net-role">Fundamentos de Programación · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
+                        <a href="https://pe.linkedin.com/in/julissa-villanueva-llerena" target="_blank" rel="noopener" class="network-link network-link--linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="network-card network-card--professor">
+                    <div class="avatar-ring avatar-ring--professor"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="network-info">
+                        <h4 class="net-name">Luis Fernando Díaz Basurco</h4>
+                        <p class="net-role">Fundamentos Matemáticos · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
+                        <a href="https://pe.linkedin.com/in/luis-fernando-d%C3%ADaz-basurco-48098333" target="_blank" rel="noopener" class="network-link network-link--linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="network-card network-card--professor">
+                    <div class="avatar-ring avatar-ring--professor"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="network-info">
+                        <h4 class="net-name">Angel David Rodriguez Cruz</h4>
+                        <p class="net-role">Comunicación I · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
+                        <a href="https://www.linkedin.com/in/angel-rodriguez-cruz-459008183/" target="_blank" rel="noopener" class="network-link network-link--linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="network-card network-card--professor">
+                    <div class="avatar-ring avatar-ring--professor"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="network-info">
+                        <h4 class="net-name">Gabriela Ponce Reinoso</h4>
+                        <p class="net-role">Vida Universitaria · <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
+                        <a href="https://pe.linkedin.com/in/gabriela-ponce-reinoso-885922127" target="_blank" rel="noopener" class="network-link network-link--linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                     </div>
                 </div>
 
@@ -384,6 +566,7 @@
 
     </main>
 
+    <!-- ===================== FOOTER ===================== -->
     <footer class="footer" id="contact">
         <div class="container footer-inner">
             <div class="footer-text">
@@ -393,7 +576,7 @@
             <ul class="footer-socials">
                 <li><a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
                 <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="mailto:juan.garcia.humpire@ucsp.edu.pe" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="mailto:juan.garcia.humpire@ucsp.edu.pe" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
             <p class="copyright">© 2026 Crafted with <span class="text-accent"><i class="fa-solid fa-heart"></i></span> by Juan David Garcia Humpire &nbsp;·&nbsp; <a href="https://ucsp.edu.pe/" target="_blank" rel="noopener">UCSP</a></p>
         </div>
@@ -406,49 +589,49 @@
             navbar.classList.toggle('scrolled', window.scrollY > 60);
         }, { passive: true });
 
-        // ── Active nav highlight ───────────────────────────
-        const sections  = document.querySelectorAll('section[id], header[id]');
-        const navLinks  = document.querySelectorAll('.nav-link');
-        const observer  = new IntersectionObserver(entries => {
+        // ── Active nav highlight via IntersectionObserver ──
+        const sections = document.querySelectorAll('section[id], header[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const io = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     navLinks.forEach(l => l.classList.remove('active'));
-                    const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
-                    if (active) active.classList.add('active');
+                    const a = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                    if (a) a.classList.add('active');
                 }
             });
-        }, { threshold: 0.35 });
-        sections.forEach(s => observer.observe(s));
+        }, { threshold: 0.3 });
+        sections.forEach(s => io.observe(s));
 
-        // ── Hamburger menu ─────────────────────────────────
+        // ── Hamburger ──────────────────────────────────────
         const hamburger = document.getElementById('hamburger');
         const navMenu   = document.getElementById('navMenu');
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('open');
             navMenu.classList.toggle('open');
         });
-        navMenu.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
+        navMenu.querySelectorAll('.nav-link').forEach(l =>
+            l.addEventListener('click', () => {
                 hamburger.classList.remove('open');
                 navMenu.classList.remove('open');
-            });
-        });
+            })
+        );
 
-        // ── Skill bar animation on scroll ─────────────────
+        // ── Skill bar animation ────────────────────────────
         const fills = document.querySelectorAll('.progress-fill');
-        const barObserver = new IntersectionObserver(entries => {
+        const barIO = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.width = entry.target.dataset.width || entry.target.style.width;
-                    entry.target.classList.add('animated');
-                    barObserver.unobserve(entry.target);
+                    const el = entry.target;
+                    el.style.width = el.dataset.w;
+                    barIO.unobserve(el);
                 }
             });
         }, { threshold: 0.5 });
         fills.forEach(f => {
-            f.dataset.width = f.style.width;
+            f.dataset.w = f.style.width;
             f.style.width = '0';
-            barObserver.observe(f);
+            barIO.observe(f);
         });
     </script>
 </body>
