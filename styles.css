@@ -326,27 +326,25 @@ section { padding: 88px 0; }
 ═══════════════════════════════════════════════════════ */
 .resume-section { padding-top: 80px; }
 
-/* Instead of auto-fit grid, stack them vertically as requested */
+/* Instead of column, make it exactly like About section */
 .resume-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    max-width: 860px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 22px;
 }
 
 .resume-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 34px 38px;
+    padding: 30px 28px;
     transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
 .resume-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(157, 0, 255, 0.4);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transform: translateY(-6px);
+    border-color: var(--purple);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.5);
 }
 
 .resume-item {
